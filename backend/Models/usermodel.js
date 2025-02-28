@@ -1,5 +1,3 @@
-// usermodel.js
-
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -10,7 +8,7 @@ const userSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: false, 
+    unique: false,
   },
   collegeName: {
     type: String,
@@ -23,19 +21,18 @@ const userSchema = new mongoose.Schema({
   yearOfStudy: {
     type: Number,
     required: true,
-    min: 1, 
+    min: 1,
     max: 4,
   },
   eventParticipation: {
     type: String,
     required: true,
-    enum: ['Coding Competition', 'Prabuddha Campus Solution Challenge', 'Scrap-2-Design', 'Logo making Competition'], // Enforce valid event names
+    enum: ['Coding Competition', 'Prabuddha Campus Solution Challenge', 'Scrap-2-Design', 'Logo making Competition'],
   },
   studentId: {
-    type: String, 
+    type: Buffer, // Changed to Buffer to store file data
     required: true,
   },
-  
   createdAt: {
     type: Date,
     default: Date.now,
@@ -43,7 +40,7 @@ const userSchema = new mongoose.Schema({
   updatedAt: {
     type: Date,
     default: Date.now,
-  }
+  },
 });
 
 const User = mongoose.model('User', userSchema);

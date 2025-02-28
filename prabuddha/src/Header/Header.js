@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes,Route,Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from '../Images/logo.jpg'
+import banner from '../Images/bannerrr.png'
 
 function Header() {
     return (
@@ -10,8 +11,10 @@ function Header() {
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         {/* <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> */}
         <span class="fs-4"><img src={logo} className='logo' alt="..."></img></span>
-        
+        <img src={banner} className='logo bann' alt="..."></img>
       </a>
+
+      
 
       <ul class="nav nav-pills ">
       <Link to="/register">
@@ -26,8 +29,10 @@ function Header() {
         <Link to="/about">
             <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
         </Link>
-
+        <Link to="/contact">
         <li class="nav-item"><a href="#" class="nav-link">contact us</a></li>
+        </Link>
+        
 
         {/* <li class="nav-item"><a href="#" class="nav-link">About us</a></li> */}
       </ul>

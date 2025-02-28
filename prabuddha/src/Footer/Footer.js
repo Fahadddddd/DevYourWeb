@@ -15,10 +15,11 @@ function Footer() {
       
       <p>Copyright © 2025 Team Deadline Tech</p>
       <ul class="nav nav-pills ">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/technointernationalnewtown/#" class="nav-link" aria-current="page"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/tint.edu.in" class="nav-link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
         
+        <li class="nav-item"><a href="https://tint.edu.in/" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i></a></li>
        
       </ul>
 

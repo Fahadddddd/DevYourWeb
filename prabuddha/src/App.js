@@ -6,6 +6,7 @@ import Explore from './Explore';
 import About from './About/About';
 import Event from './Event/Event'
 import Register from './Registration/Register';
+import Contact from './Contact/Contact';
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/event" element={<Event />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
     
     </BrowserRouter>

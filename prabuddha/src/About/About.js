@@ -82,6 +82,10 @@ function About() {
         <h4 className='d-flex justify-content-center'>Past Events</h4>
         <br/>
 
+        <h5>History Of Tech-Fest</h5>
+
+        <p>Techfest has had multiple iterations, including a science and technology festival at TINT, a Model United Nations competition, and a family-friendly event at the Computer History Museum</p>
+
         <div className='d-flex justify-content-center'>
         <video src={video} width="320" height="240" controls></video>
         </div>
